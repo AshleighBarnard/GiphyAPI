@@ -4,20 +4,60 @@
   <meta charset="UTF-8">
   <title>Giphy API App</title>
    <link rel="stylesheet" href="assets/style.css">
-<body>
-
-<div>
-  Container1
-
-
-</div>
-
-</body>
-
-
-  <title>Document</title>
-</head>
+   <link rel="stylesheet" href="assets/unite.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light+Two" rel="stylesheet">
 <body>
   
+  <!-- jumbotron header -->
+
+  <div class="jumbotron jumbotron-fluid" id="header">
+    <h1>See Ya In a Giphy!</h1>
+    <h4>Click the buttons to display GIPHYs of your favorite characters in a jiffy.<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
+  </div>
+
+<!-- Search form --> 
+
+<form class="form-inline" id="gifSearch">
+  <div class="form-group">
+    <label for="gifInput">Search for a GIF</label>
+    <input type="text" id="gifInput">
+  </div>
+
+
+
+  <!-- Button triggers show to be added -->
+
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="bttn-success bttn-unite" id="show" data-search="Stranger Things">Stranger Things</button>
+      <button class="bttn-success bttn-unite" id="show" data-search="Narcos">Narcos</button>
+      <button class="bttn-success bttn-unite" id="show" data-search="Luke Cage">Luke Cage</button>
+      <button class="bttn-success bttn-unite" id="show" data-search="Jessica Jones">Jessica Jones</button>
+
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+
+<script type="text/javascript" src="assets/app.js"</script></script>
 </body>
+
+
+
 </html>
