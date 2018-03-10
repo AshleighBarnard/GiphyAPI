@@ -1,7 +1,7 @@
 body {
     background-image: url("/Users/ashleighbarnard/Desktop/apps/GiphyAPI/assets/sasha.jpg");
     color: white;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size:100%;
  }
 
