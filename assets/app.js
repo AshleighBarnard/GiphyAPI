@@ -65,7 +65,7 @@ $(document).ready(function() {
 
   displayButtons();
 
-  //Click event on button with id of "show" executes displayNetflixShow function
+  //Click event on button with id of "show" executes displayGif function
   $(document).on("click", "#show", displayGif);
 
   //Click event on gifs with class of "netflixGiphy" executes pausePlayGifs function
